@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="baseUrl" value="https://www.bestbuy.com/"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="product" value="tcl 75 inch tv"/>
+    <parameter name="password" value="Buy$123"/>
+    <parameter name="emailID" value="jmvenkatesh06@gmail.com"/>
+    <classes>
+      <class name="testcases.CheckOutTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="browserLaunch"/>
+          <include name="CheckOutValidation"/>
+        </methods>
+      </class> <!-- testcases.CheckOutTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
